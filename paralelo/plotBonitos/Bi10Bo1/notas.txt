@@ -1,0 +1,24 @@
+s	=	0.8
+Bin	=	10
+Bout=	1
+----------
+10	10000
+20	10000
+30	10000
+40 	10000
+50	10000
+60	XXXXX regular (no en espacio de fases, mejor usarlo en trayectoria regular plot)
+70	10000
+80	10000
+90	10000
+100	10000 (regular) green
+150 10000
+152	10000 (regular con s=0.5) red
+160	10000
+
+---------------------
+TOTAL 1 000 000 datos
+
+gnuplot
+plot 'sdata10.dat' pt 0 lc -1 lw 2 notitle ,'sdata20.dat' pt 0 lc -1 lw 2 notitle,'sdata30.dat' pt 0 lc -1 lw 2 notitle,'sdata40.dat' pt 0 lc -1  lw 2 notitle,'sdata50.dat' pt 0 lc -1 notitle,'sdata70.dat' pt 0 lc -1  lw 2 notitle,'sdata80.dat' pt 0 lc -1  lw 2 notitle,'sdata90.dat' pt 0 lc -1  lw 2 notitle,'sdata100.dat'pt 0 lc 'green' lw 2 notitle,'sdata150.dat' pt 0 lc -1  lw 2 notitle,'sdata152.dat' pt 0 lc 'red' lw 1 notitle,'sdata160.dat' pt 0 lc -1   lw 2 notitle
+
