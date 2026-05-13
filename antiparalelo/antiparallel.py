@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 ########################
 #Parámetros de entrada #
 #######################
-print('BIENVENIDO AL BILLAR INVERSO CON CAMPO MAGNETICO INTERIOR')
-print('CAMPOS ANTIPARALELOS')
+print('WELCOME TO INVERSE MAGNETIC BILLIARDS')
+print('ANTIPARALLEL MAGNETIC FIELDS')
 Bin,Bout = 10,1
 Rin,Rout = 1/Bin,1/Bout
 
@@ -23,7 +23,7 @@ print('Campo Magnetico interior:',Bin)
 print('Campo Magnetico exterior:',Bout)
 print('Posición inicial:',P)
 print('Velocidad inicial:',v)
-#plt.title('Billar Magnético')
+plt.title('B_in ='+str(Bin)+' B_out='+str(Bout))
 plt.grid()
 plt.xlim(-2,3)
 plt.ylim(-2,3)
