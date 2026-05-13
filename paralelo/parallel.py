@@ -9,7 +9,7 @@ print(10*'=')
 print('BIENVENIDO AL BILLAR INVERSO CON CAMPO MAGNETICO INTERIOR')
 print('CAMPO MAGNETICO PARALELO')
 print(10*'=')
-Bin,Bout = 10,1
+Bin,Bout = 2,1
 vAngle = 100 # en grados sexagesimales
 ##########################
 
@@ -30,7 +30,7 @@ plt.plot([0,1,1,1,0,0],[0,0,1,1,1,0])
 file1 = open('sdata.txt',"w")
 #file2 = open('unfolded.dat',"w")
 
-for i in range(10000):
+for i in range(10):
         #print('Iteracion',i)
         #print('SALIDA')
         A1 = P
@@ -39,7 +39,7 @@ for i in range(10000):
         #print('PUNTO SALIDA',P)
         v = veloOut(P,centro)
         #print('VELOCIDAD SALIDA',v)
-        plotArc(A1,P,centro,Rin)
+        plotArc(A1,P,centro,Rin,'blue')
         ###############################
         #print('INGRESO')
         A1 = P
@@ -49,7 +49,7 @@ for i in range(10000):
         v = veloOut(P,centro)
         #print('VELOCIDAD INGRESO',v)
         #plt.arrow(P[0],P[1],v[0],v[1])
-        plotArc(A1,P,centro,Rout)
+        plotArc(A1,P,centro,Rout,'blue')
         #print(sDistance(P),v,np.rad2deg(sThetaAngle(P,v)))
         ##### GUARDAR DATA S Y UNFOLDED
         file1.write(str(sDistance(P))+"\t"+str(np.rad2deg(sThetaAngle(P,v)))+"\n")

@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 #######################
 print('WELCOME TO INVERSE MAGNETIC BILLIARDS')
 print('ANTIPARALLEL MAGNETIC FIELDS')
-Bin,Bout = 10,1
+Bin,Bout = 2,1
 Rin,Rout = 1/Bin,1/Bout
 
 x,y = 0.13 , 0 #ubicación inicial
