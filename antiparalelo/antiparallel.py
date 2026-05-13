@@ -1,4 +1,6 @@
-
+'''
+This is antiparalel case
+'''
 import numpy as np
 from magnetic import *
 import matplotlib.pyplot as plt
